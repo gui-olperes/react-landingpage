@@ -1,0 +1,173 @@
+/*Google Fonts*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&display=swap');
+
+
+
+* { box-sizing: border-box }
+
+body{
+  margin:0;
+  padding:0;
+  color: white;
+  overflow: hidden;
+  font-family: 'Fira Sans', sans-serif;
+  
+}
+
+
+/*Background*/
+
+.one{
+  background-color: #25316D;
+  background-image: -webkit-linear-gradient(30deg, #25316D 50%, #5F6F94 50%);
+  min-height: 500px;
+  height: 100vh;
+
+}
+
+
+/*Nav*/
+
+.line:hover {
+  border-bottom: 2px solid #FEF5AC;
+
+}
+/*Content*/
+
+.title {
+  position: absolute;
+  top: 38%;
+  right: 6%;
+  font-weight: bold;
+  font-family: 'Fira Sans', sans-serif;
+  text-align: left; 
+}
+
+nav span {
+  color: #FEF5AC;
+} 
+
+.title h1 {
+  color: #FEF5AC;
+  font-size: 110px;
+}
+
+
+.img-content{
+  width: 370px;
+  position: absolute;
+  top: 30%;
+  left: 9%;
+  filter: drop-shadow(0 4px 32px hsla(203, 71%, 60%, .5));
+  animation: float 4s ease-in-out infinite;
+}
+
+
+@keyframes float{
+  0%{
+    transform: translateY(.5rem);
+  }  
+  50%{
+    transform: translateY(2rem);
+  }  
+  100%{
+    transform: translateY(.5rem);
+  }  
+}  
+
+/*Button*/
+
+.pos-button {
+  position: absolute;
+  top: 58%;
+  right: 29%;
+}
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+ }
+ 
+ button.learn-more {
+  width: 12rem;
+  height: auto;
+ }
+ 
+ button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #282936;
+  border-radius: 1.625rem;
+ }
+ 
+ button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+ }
+ 
+ button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+ }
+ 
+ button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+ }
+ 
+ button.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #282936;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+ }
+ 
+ button:hover .circle {
+  width: 100%;
+ }
+ 
+ button:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+ }
+ 
+ button:hover .button-text {
+  color: #fff;
+ }
