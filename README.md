@@ -1,2 +1,7 @@
 # react-test
-ainda em andamento**
+
+- Contém CSS, React & JavaScript.
+
+
+![preview img](/preview.png)
+
