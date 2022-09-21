@@ -3,5 +3,5 @@
 - Contém CSS, React & JavaScript.
 
 
-![preview img](/preview.png)
+![preview img](/preview1.png)
 
